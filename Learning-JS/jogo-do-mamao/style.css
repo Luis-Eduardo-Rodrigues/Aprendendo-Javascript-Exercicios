@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  h1{
+    color: #fa7f0d;
+    font-size: 60px;
+    font-family: monospace;
+  }
+  
+  #rodar{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #fa7f0d;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #res{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 34px;
+    color: #fa7f0d;
+    font-weight: bold;
+    font-family: monospace;
+  }
