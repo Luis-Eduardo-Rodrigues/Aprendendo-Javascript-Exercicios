@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 100vh;
+    background-color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+  }
+  #title{
+    color: white;
+    margin-bottom: 24;
+  }
+  .box{
+    width: 500px;
+    height: 350px;
+    border: solid 1px white;
+    margin-bottom: 25px;
+  }
+  input{
+    width: 100;
+    padding: 8;
+    border: none;
+  }
+  #apply{
+    width: 100;
+    padding: 7;
+  }
+  #res{
+    margin-top: 30px;
+    color: white;
+    font-size: 22px;
+  }
