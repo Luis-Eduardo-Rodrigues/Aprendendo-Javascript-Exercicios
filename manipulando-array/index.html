@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Array e Objetos</title>
+</head>
+<body>
+   <h1>Manipulando Array e Objetos</h1>
+
+   <input type="text">
+   <button>Adicionar no array</button>
+   <button id="delete">Deletar</button>
+    <button onclick="mostrar()">mostrar</button>
+    <h1></h1>
+
+   <script>
+    const h1 = document.querySelector("h1")
+
+    const valoresDoInput = []
+
+    const btn = document.querySelector("button")
+
+    btn.addEventListener("click", () => {
+
+    const valor = document.querySelector("input").value
+
+    valoresDoInput.push(valor)
+
+    console.log(valoresDoInput)
+    })
+
+    const remover = document.querySelector("#delete").addEventListener("click", () => {
+        valoresDoInput.pop()
+        console.log(valoresDoInput)
+    })
+
+    function mostrar(){
+
+    const map1 = valoresDoInput.forEach((valor) => {
+        h1.innerHTML = map1
+    })
+    }
+   </script>
+</body>
+</html>
