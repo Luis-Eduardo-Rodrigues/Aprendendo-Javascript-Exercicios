@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Usuarios Github</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="user-form">
+            <input type="text" id="username" placeholder="Procurar Usuario do Github">
+            <button onclick="buscarUser()">Buscar</button>
+        </div>
+        <div class="res" id="res">
+            <div class="img-container">
+                <img src="" id="imagem">
+            </div>
+            <div class="info">
+                <h2 id="name"></h2>
+                <p id="bio"></p>
+                <p id="seguidores"></p>
+                <p id="seguindo"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
