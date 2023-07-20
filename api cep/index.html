@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca CEP</title>
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            font-family: sans-serif;
+            background-color: rgb(151, 139, 139);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 30px;
+        }
+
+        input {
+            margin-top: 20px;
+            width: 200px;
+            height: 24px;
+            padding: 0px 10px;
+            border: solid 1px black;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: black;
+        }
+
+        button {
+            width: 130px;
+            padding: 4px 0px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        button:hover {
+            border: solid black 1px;
+            color: black;
+            background-color: rgb(181, 173, 173);
+        }
+        p{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Buscar CEP</h1>
+    <input type="text" id="cep" placeholder="CEP"><button onclick="consultaCep()">Buscar</button>
+    <div id="res">
+        <p id="txtCEP"></p>
+        <p id="bairro"></p>
+        <p id="localidade"></p>
+        <p id="DDD"></p>
+        <p id="logradouro"></p>
+        <p id="uf"></p>
+    </div>
+</body>
+
+</html>
